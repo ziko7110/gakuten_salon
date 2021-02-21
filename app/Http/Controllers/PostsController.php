@@ -62,6 +62,7 @@ class PostsController extends Controller
     public function destroy($post_id)
     {
         $post = Post::findOrfail($post_id);
+        
         $post->delete();
 
         return redirect()->route('top');
