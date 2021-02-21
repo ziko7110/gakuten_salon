@@ -13,4 +13,16 @@ class PostsController extends Controller
         
         return view('posts.index', ['posts' => $posts]);
     }
+    
+    public function create()
+    {
+        return view('posts.create');
+    }
+    
+     public function store()
+    {
+        $posts = Post::orderBy('created_at','desc')->get();
+        
+        return view('posts.index', ['posts' => $posts]);
+    }
 }
