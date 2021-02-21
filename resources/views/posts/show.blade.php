@@ -38,7 +38,6 @@
                 <button class="btn btn-danger">
                     削除
                 </button>
-                
             </form>
     </div>
     
