@@ -12,18 +12,14 @@
                 <div class="card-header mb-2">
                     {{ $post->title }}
                 </div>
-                 <div class="card-body">
-                     <p>
-                        {{ $post->body }}
-                    </p>
+                <div class="card-body">
+                    <p>{{ $post->body }}</p>
                 </div>
-                 <div class="card-footer">
-                     <span>
-                         投稿日時
-                    </span>
+                <div class="card-footer">
+                    <span>投稿日時</span>
                 </div>
             </div>
-             <div class="mt-4 text-right">
+            <div class="mt-4 text-right">
             <a class="btn btn-primary" href="{{ route('posts.edit', ['post' => $post])}}">
                 編集
             </a>

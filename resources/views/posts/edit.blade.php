@@ -7,11 +7,9 @@
             <h1 class="h5 mb-4">
                 投稿の編集
             </h1>
-            
             <form method="POST" action="{{ route('posts.update', ['post' => $post])}}">
                 {{csrf_field()}}
                 {{ method_field('PUT')}}
-                
                 <fieldset class="mb4">
                     <div class="form-group">
                         <label for="title">

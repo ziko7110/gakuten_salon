@@ -35,13 +35,18 @@ class PostsController extends Controller
     {
         $post = Post::find($post_id);
 
-        return view('posts.show', ['post' => $post]);
+        return view('posts.show', [
+            'post' => $post
+        ]);
     }
 
         public function edit($post_id)
     {
         $post = Post::findOrfail($post_id);
-        return view('posts.edit', ['post' => $post]);
+        
+        return view('posts.edit', [
+            'post' => $post
+        ]);
 
     }
 

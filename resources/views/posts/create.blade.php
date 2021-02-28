@@ -7,10 +7,8 @@
             <h1 class="h5 mb-4">
                 投稿の新規作成
             </h1>
-            
             <form method="POST" action="{{ route('posts.store')}}">
                 {{csrf_field()}}
-                
                 <fieldset class="mb-4">
                     <div class="form-group">
                         <label for="title">
@@ -41,7 +39,6 @@
                         <a class="btn btn-secondary" href="{{route('top')}}">
                             キャンセル
                         </a>
-                            
                         <button type="submit" class="btn btn-primary">
                             投稿する
                         </button>

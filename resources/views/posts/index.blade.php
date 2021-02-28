@@ -13,17 +13,15 @@
                 <div class="card-header mb-2">
                     {{ $post->title }}
                 </div>
-                 <div class="card-body">
-                     <p>
-                        {{ $post->body }}
-                    </p>
+                <div class="card-body">
+                    <p>{{ $post->body }}</p>
                 </div>
                 <a class="card-link" href="{{ Route('posts.show', ['post' => $post]) }}">
-                     詳細を見る
+                    詳細を見る
                 </a>
-                 <div class="card-footer">
-                     <span>
-                         投稿日時
+                <div class="card-footer">
+                    <span>
+                        投稿日時
                     </span>
                 </div>
             </div>
