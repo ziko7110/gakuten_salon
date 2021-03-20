@@ -34,13 +34,11 @@
                             class="form-control"
                             rows="4"
                         >{{$post->body}}</textarea>
-                        
                     </div>
                     <div class="mt-5">
                         <a class="btn btn-secondary" href="{{ route('posts.show', ['post' => $post])}}">
                             キャンセル
                         </a>
-                            
                         <button type="submit" class="btn btn-primary">
                             更新する
                         </button>
@@ -49,5 +47,4 @@
             </form>
         </div>
     </div>
-
 @endsection('content')

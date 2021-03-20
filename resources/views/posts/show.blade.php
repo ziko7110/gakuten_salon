@@ -8,22 +8,21 @@
                 投稿を新規作成する
             </a>
         </div>
-            <div class="card mt-4">
-                <div class="card-header mb-2">
-                    {{ $post->title }}
-                </div>
-                <div class="card-body">
-                    <p>{{ $post->body }}</p>
-                </div>
-                <div class="card-footer">
-                    <span>投稿日時</span>
-                </div>
+        <div class="card mt-4">
+            <div class="card-header mb-2">
+                {{ $post->title }}
             </div>
-            <div class="mt-4 text-right">
+            <div class="card-body">
+                <p>{{ $post->body }}</p>
+            </div>
+            <div class="card-footer">
+                <span>投稿日時</span>
+            </div>
+        </div>
+        <div class="mt-4 text-right">
             <a class="btn btn-primary" href="{{ route('posts.edit', ['post' => $post])}}">
                 編集
             </a>
-            
             <form
             style="display: inline-block;"
             method="POST"
@@ -35,6 +34,6 @@
                     削除
                 </button>
             </form>
+        </div>
     </div>
-    
 @endsection('content')

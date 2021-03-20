@@ -43,7 +43,6 @@
                         <a class="btn btn-secondary" href="{{ route('top') }}">
                             キャンセル
                         </a>
-                        
                         <button type="submit" class="btn btn-primary">
                             投稿する
                         </button>
@@ -52,5 +51,4 @@
             </form>
         </div>
     </div>
-    
 @endsection('content')
